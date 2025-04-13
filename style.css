@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.leftside-body{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-right: 70px;
+
+}
+
+.main-body{
+  padding-right: 0px;
+
+}
+
+ul{
+  list-style: none;
+}
+
+.icon{
+  color: rgb(236, 235, 235);
+  font-size: 22px;
+  padding-left: 30px;
+  padding-right: 45px;
+}
+
+.home{
+  font-weight: 700;
+  font-size: 22px;
+}
+
+
+.main-body {
+  position: relative;
+  width: 60%; /* Instead of fixed width */
+  max-width: 700px;
+  margin: 0 auto; /* Centers it */
+  border-right: 1px solid rgba(102, 102, 102, 0.74);
+  border-left: 1px solid rgba(102, 102, 102, 0.74);
+}
+
+
+.headline{
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.post-icon>ul>li{
+  display: inline;
+  padding: 8px;
+}
+
+
+.rightside-body {
+  position: absolute;
+  top: 0;
+  right: 20px; /* Adjust margin */
+  width: 300px; /* Ensure proper width */
+  margin-right: 30px;
+  
+}
+
+
+.reply-btn:hover,
+.like-btn:hover {
+  color: #1DA1F2;
+  transition: 0.2s;
+}
+
+
+
+.cusBorder-2{
+  border: 1px solid rgba(102, 102, 102, 0.74);
+  border-radius:20px; 
+  height: fit-content;
+ }
+/* --------- Mobile Layout (Below 768px) --------- */
+
+
+@media (max-width: 768px) {
+  .leftside-body {
+    display: none;
+  }
+
+  .leftside-body.show {
+    display: block;
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    width: 250px;
+    height: 100vh;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .main-body {
+    width: 85%;
+    margin: 50px auto;
+  }
+
+  .rightside-body {
+    display: none; /* Hide on tablets */
+  }
+
+  
+}

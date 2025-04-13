@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter-X</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="style.css">
+  <style>
+   .cusBorder{
+    border-top: 1px solid rgba(102, 102, 102, 0.74);
+
+   }
+  </style>
+</head>
+
+<body>
+
+    <!-- Mobile menu button -->
+    <div class="d-block d-lg-none text-light px-3 py-2">
+      <i class="fa-solid fa-bars" id="menu-toggle" style="font-size: 24px;"></i>
+    </div>
+
+    <section class="row p-2 justify-content-around text-light">
+      <section class="col-sm-3 col-md-3 col-lg-3 leftside-body" style="max-height: 600px;">
+        <ul>
+            <div class="icon">
+            <li><i class="fa-brands fa-x-twitter" style="font-size:32px;margin-top: 14px;"></i></li>
+            <li><i class="fa-solid fa-house" style="padding-top: 20px"></i><span class="px-3">Home</span></li>
+            <li><i class="fa-solid fa-bell"style="padding-top: 20px"></i><span class="px-3">Notifications</span></li>
+            <li><i class="fa-solid fa-magnifying-glass"style="padding-top: 20px"></i><span class="px-3">Explore</span></li>
+            <li><i class="fa-solid fa-envelope"style="padding-top: 20px"></i><span class="px-3">Messages</span></li>
+            <li><i class="fa-solid fa-user-group"style="padding-top: 20px"></i><span class="px-3">Communities</span></li>
+            <li><i class="fa-solid fa-user" style="padding-top: 20px"></i><span class="px-3">Profile</span></li>
+            <li><i class="fa-solid fa-ellipsis"style="padding-top: 20px"></i><span class="px-3">More</span></li>
+            
+            </div>
+        </ul>
+      </section>
+
+      <section class="col-sm-9 col-md-9 col-lg-9">
+        <section class="row">
+            <section class="col-sm-7 col-md-7 col-lg-7 main-body p-0">
+                  <div class="d-flex pl-0 ml-0 justify-content-around align-items-center headline" style="height: 50px;">
+                      <p class="m-0">For you</p>
+                      <p class="m-0">Following</p>
+                  </div>
+                  <div class="cusBorder d-flex pb-0 p-3 "style="height:80px; padding-bottom: 0px">
+                      <img src="images/Gmail icon.jpg" alt="image" style="border-radius: 50%; width: 50px; height: 50px;">
+                      <textarea class="form-control w-75" style="border: none; display: inline-block; background-color: black;" id="exampleFormControlTextarea1" rows="10" placeholder="What is happening?!" ></textarea>
+                  </div>
+                  <div class="mx-4 px-5">
+                      <p style="color:#1B92E2;"><i class="fa-solid fa-earth-americas"></i><span class="px-1"style="font-weight:500; font-size:17px; ">Everyone can reply</span></p><hr>
+                  </div>
+                  
+                  <div class="d-flex px-4 post-icon justify-content-between">
+                      <ul style="color:#1B92E2; font-size: 18px">
+                        <li><i class="fa-regular fa-image"></i></li>
+                        <li><i class="fa-solid fa-photo-film"></i></li>
+                        <li><i class="fa-solid fa-sliders"></i></li>
+                        <li><i class="fa-regular fa-face-smile-beam"></i></li>
+                        <li><i class="fa-solid fa-calendar-check"></i></li>
+                        <li><i class="fa-solid fa-location-dot"></i></li>
+                      </ul>
+
+                      <button class="btn btn-primary btn-sm mb-3" style="border-radius: 20px; padding: 5px 20px; font-weight: 700; font-size:18px">Post</button>  
+                  </div>
+                  
+                  <div class="cusBorder d-flex justify-content-center" style="font-size:18px; color:#1B92E2; padding-left:-5 px;"> Show 315 posts</div>
+
+                  <div class="cusBorder p-3">
+                    <div class="d-flex align-items-start">
+                      <img src="images/Gmail icon.jpg" alt="image" style="border-radius: 50%; width: 50px; height: 50px;">
+                      <div class="px-3 w-100">
+                        <p style="font-weight: 600; margin: 0;">@Ehsanul_Haque_shadman_software_developer</p>
+                        <p>This is a sample tweet from my frontend Twitter-X clone!</p>
+                        <div class="d-flex justify-content-start gap-4">
+                          <span class="reply-btn" style="cursor: pointer;"><i class="fa-regular fa-comment"></i> <span class="ms-1">Reply</span></span>
+                          <span class="like-btn" style="cursor: pointer;"><i class="fa-regular fa-heart"></i> <span class="ms-1">Like</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <span class="reply-btn" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#replyModal">
+                    <i class="fa-regular fa-comment"></i> <span class="ms-1">Reply</span>
+                  </span>
+                  
+                  
+                
+                  <div class="cusBorder d-flex justify-content-center">
+                    <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ca" dir="ltr">🚀🚀🇺🇸🇺🇸 AMERICA 🇺🇸🇺🇸🚀🚀<br> <a href="https://t.co/ZQ00BL8YMC">pic.twitter.com/ZQ00BL8YMC</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1809090690766233873?ref_src=twsrc%5Etfw">July 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+                  
+                  <div class="d-flex justify-content-center p-3">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">“Flight 5 in 4 weeks”<br><br>— Elon Musk <a href="https://t.co/sk8aSgWl2o">pic.twitter.com/sk8aSgWl2o</a></p>&mdash; Dima Zeniuk (@DimaZeniuk) <a href="https://twitter.com/DimaZeniuk/status/1809440904790376520?ref_src=twsrc%5Etfw">July 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+
+                  <div class="d-flex justify-content-center p-3">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The fourth flight of Starship brought us closer to a rapidly reusable future <a href="https://t.co/maSky0Rsjy">pic.twitter.com/maSky0Rsjy</a></p>&mdash; SpaceX (@SpaceX) <a href="https://twitter.com/SpaceX/status/1808900954730942940?ref_src=twsrc%5Etfw">July 4, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+
+                  <div class="d-flex justify-content-center p-3">
+                  <blockquote class="twitter-tweet bg-dark" data-media-max-width="560"><p lang="zxx" dir="ltr"><a href="https://t.co/JHy0bCU6Rb">pic.twitter.com/JHy0bCU6Rb</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1807632775664771336?ref_src=twsrc%5Etfw">July 1, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+
+                  <div class="d-flex justify-content-center p-3">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Let’s make (good) sci-fi real! <a href="https://t.co/0kHqDymE9B">https://t.co/0kHqDymE9B</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1807484028943216892?ref_src=twsrc%5Etfw">June 30, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+
+                  <div class="d-flex justify-content-center p-3">
+                    <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="zxx" dir="ltr"><a href="https://t.co/MnvArHwJRm">pic.twitter.com/MnvArHwJRm</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1805804111037919520?ref_src=twsrc%5Etfw">June 26, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+
+
+                  <div class="d-flex justify-content-center p-3">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Falcon Heavy rolls out to the launch pad at 39A for <a href="https://twitter.com/NASA?ref_src=twsrc%5Etfw">@NASA</a>’s GOES-U mission <a href="https://t.co/akvjroyQs3">pic.twitter.com/akvjroyQs3</a></p>&mdash; SpaceX (@SpaceX) <a href="https://twitter.com/SpaceX/status/1805399291344629761?ref_src=twsrc%5Etfw">June 25, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+
+                  <div class="d-flex justify-content-center p-3">
+                    <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Here’s the <a href="https://twitter.com/hashtag/Spacex?src=hash&amp;ref_src=twsrc%5Etfw">#Spacex</a> rocket flying over the beaches in San Diego. <a href="https://t.co/RhO4cYim12">pic.twitter.com/RhO4cYim12</a></p>&mdash; Mark C. Crowley (@MarkCCrowley) <a href="https://twitter.com/MarkCCrowley/status/1805088127780012196?ref_src=twsrc%5Etfw">June 24, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+
+            </section>
+          
+            <section class="col-sm-3 col-md-3 col-lg-3 rightside-body">
+                <input type="search" class="form-control rounded-pill bg-dark border-0" style="width:320px; border-radius: 60px; height: 50px; margin-right: 25px; margin-top: 10px;"
+                placeholder="Search">
+
+              <div class="p-3 pb-2 my-4 cusBorder-2">
+                <p class="p-0 m-0" style="font-weight:800; font-size:22px">Subscribe to Premium</p>
+                <p class="pl-2"style="font-size:17px;">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+
+                <button class="btn btn-primary btn-sm mb-3" style="border-radius: 20px; padding: 5px 20px; font-weight: 700; font-size:18px">Subscribe</button> 
+              </div>
+
+              <div class="p-3 pb-2 my-4 cusBorder-2">
+                <p class="p-0 m-0" style="font-weight:800; font-size:22px">Trends for you</p>
+                <p class="pl-2 mb-0"style="font-size: 17px; color: rgba(102, 102, 102, 0.74)">Trending in Bangladesh.</p>
+                <p class="p-0 m-0" style="font-weight:700; font-size:18px">#Bangladesh</p>
+                <p class="pl-2 mb-0 mt-2"style="font-size: 17px; color: rgba(102, 102, 102, 0.74)">Trending in USA.</p>
+                <p class="p-0" style="font-weight:700; font-size:18px">#USA</p>
+                <p class="pl-2 mb-0 mt-2"style="font-size: 17px; color: rgba(102, 102, 102, 0.74)">Trending in technology.</p>
+                <p class="p-0" style="font-weight:700; font-size:18px">#SpaceX</p>
+                <p class="pl-2 mb-0 mt-2"style="font-size: 17px; color: rgba(102, 102, 102, 0.74)">Trending NEWS.</p>
+                <p class="p-0" style="font-weight:700; font-size:18px">#CNN #USA TODAY</p>
+                <p class="pl-2 mb-0 mt-2"style="font-size: 17px; color: rgba(102, 102, 102, 0.74)">Business&Finance.</p>
+                <p class="p-0" style="font-weight:700; font-size:18px">#hamster</p>
+              </div>
+
+            </section>
+        </section>  
+      </section>
+    </section>
+
+    <!-- Reply Modal -->
+  <div class="modal fade" id="replyModal" tabindex="-1" aria-labelledby="replyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="replyModalLabel">Reply to @shadman_dev</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <textarea class="form-control" id="replyText" rows="3" placeholder="Write your reply..."></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button id="sendReplyBtn" type="button" class="btn btn-primary">Reply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/18e8b36c2d.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
